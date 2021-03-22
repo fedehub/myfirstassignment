@@ -1,9 +1,9 @@
 #include "ros/ros.h"
-#include "assignment1/random.h"
+#include "myfirstassignment/rdm.h"
 #include <math.h>
 
 
-bool Rand (assignment1::random::Request &req, assignment1::random::Response &res){
+bool Rand (myfirstassignment::rdm::Request &req, myfirstassignment::rdm::Response &res){
 	res.random_x = -6 + rand()%12;
 	res.random_y = -6 + rand()%12;
     

@@ -14,5 +14,3 @@ rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 Once I have created a new ROS package, **two ROS nodes** have been developed by using **c++** programming language. 
 
 
-
-

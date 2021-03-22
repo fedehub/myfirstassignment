@@ -3,14 +3,19 @@
 #include <sstream>
 #include <iostream>
 #include <nav_msgs/Odometry.h>
-#include "assignment1/random.h"
+#include "myfirstassignment/rdm.h"
 #include <math.h>
 
 ros::Publisher pub;
 
 ros::ServiceClient client;
 
-assignment1::random rand_position;
+myfirstassignment::rdm rand_position;
+
+int distance_btw_points(int a, int b){
+	return sqrt(a^2 +b^2);
+}
+
 
 void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
 {
@@ -40,7 +45,7 @@ void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
 	
 	pub.publish(msg_sent);
 	
-	ROS_INFO("I am reaching the target")
+	ROS_INFO("I am reaching the target");
 
    }
 
@@ -49,9 +54,6 @@ void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
 
 // defining distance btw two points
 
-int distance_btw_points(int a, int b){
-	return sqrt(a^2 +b^2)
-}
 
 
 int main(int argc, char **argv)
@@ -61,7 +63,7 @@ int main(int argc, char **argv)
   
   ros::NodeHandle n;
   
-  client = n.serviceClient<assignment1::random>("/random");
+  client = n.serviceClient<myfirstassignment::rdm>("/random");
   client.call(rand_position);
 
 
