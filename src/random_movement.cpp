@@ -1,3 +1,14 @@
+/* author: Federico Civetta 
+ * 
+ * 
+ * FIRST ASSIGNMENT 
+ * Research track (first module) 
+ *
+ * First Node:
+ * Implementation of the Robot behavior
+*/
+
+
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
 #include <sstream>
@@ -12,11 +23,22 @@ ros::ServiceClient client;
 
 myfirstassignment::rdm rand_position;
 
+/**
+ *@brief This function, given two points a and b, provides the euclidean distance between them.
+ *@param a is the minimum number of the interval 
+ *@param b is the maximum number of the interval
+ *@retval the distance (int) between a and b
+ */
 int distance_btw_points(int a, int b){
 	return sqrt(a^2 +b^2);
 }
 
-
+/**
+ *@brief This function, is called very time something is read from the topic /odom 
+ *@param pose_msf 
+ *@param 
+ *@retval 
+ */
 void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
 {
    geometry_msgs::Twist msg_sent;
@@ -52,9 +74,10 @@ void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
   
 }
 
-// defining distance btw two points
 
 
+
+// Main
 
 int main(int argc, char **argv)
 {
