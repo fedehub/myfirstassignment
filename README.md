@@ -23,7 +23,7 @@ The first node, [random_movement.cpp](https://github.com/fedehub/myfirstassignme
 
 ## The second node  ##
 
-The second node [random_server.cpp](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), implement a server whose aim is to compute 2 random numbers
+The second node [random_service.cpp](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), implement a server whose aim is to compute 2 random numbers
 
 ## The rdm.srv file  ##
 
