@@ -21,9 +21,10 @@
  */
 
 bool Rand (myfirstassignment::rdm::Request &req, myfirstassignment::rdm::Response &res){
-	res.random_x = -6 + rand()%12;
-	res.random_y = -6 + rand()%12;
-    
+	min=-6
+        max=6
+        res.random_x = rand()%(max-min + 1) + min;
+        res.random_y = rand()%(max-min + 1) + min;
 	return true;
 }
 
