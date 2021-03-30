@@ -47,13 +47,13 @@ rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 4. To launch the [firs node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_movement.cpp), digit:
 
 ```
-rosrun myfirstassignment random_server 
+rosrun myfirstassignment rand_ser 
 
 ```
 5. To launch the [second node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), digit:
 
 ```
-rosrun myfirstassignment random_movement 
+rosrun myfirstassignment rand_mov 
 
 ```
 
