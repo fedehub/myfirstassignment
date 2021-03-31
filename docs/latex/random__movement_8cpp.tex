@@ -1,0 +1,123 @@
+\hypertarget{random__movement_8cpp}{}\section{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+movement.cpp File Reference}
+\label{random__movement_8cpp}\index{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+movement.\+cpp@{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+movement.\+cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}geometry\+\_\+msgs/\+Twist.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Odometry.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}myfirstassignment/rdm.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for random\+\_\+movement.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random__movement_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{random__movement_8cpp_abc69a0e42840344c22a4a74b656eb377}{distance\+\_\+btw\+\_\+points} (int a, int b)
+\begin{DoxyCompactList}\small\item\em This function, given two points a and b, provides the euclidean distance between them. \end{DoxyCompactList}\item 
+void \hyperlink{random__movement_8cpp_aef70658f8ec02213922917e67d9e1c76}{subscriber\+Callback} (const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&pose\+\_\+msg)
+\begin{DoxyCompactList}\small\item\em This function, is called every time something is read from the topic /odom. \end{DoxyCompactList}\item 
+int \hyperlink{random__movement_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Publisher \hyperlink{random__movement_8cpp_a350594df3e8f6948c8462edfd41ce086}{pub}
+\item 
+ros\+::\+Service\+Client \hyperlink{random__movement_8cpp_a17bcd065930a8a7f9f194078d9977268}{client}
+\item 
+myfirstassignment\+::rdm \hyperlink{random__movement_8cpp_a7b452f070094b469cfdb9ed3f7e144ef}{rand\+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!distance\+\_\+btw\+\_\+points@{distance\+\_\+btw\+\_\+points}}
+\index{distance\+\_\+btw\+\_\+points@{distance\+\_\+btw\+\_\+points}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{distance\+\_\+btw\+\_\+points(int a, int b)}{distance_btw_points(int a, int b)}}]{\setlength{\rightskip}{0pt plus 5cm}int distance\+\_\+btw\+\_\+points (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{random__movement_8cpp_abc69a0e42840344c22a4a74b656eb377}{}\label{random__movement_8cpp_abc69a0e42840344c22a4a74b656eb377}
+
+
+This function, given two points a and b, provides the euclidean distance between them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & is the minimum number of the interval \\
+\hline
+{\em b} & is the maximum number of the interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & distance (int) between a and b \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 32 of file random\+\_\+movement.\+cpp.
+
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!main@{main}}
+\index{main@{main}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{random__movement_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{random__movement_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 83 of file random\+\_\+movement.\+cpp.
+
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!subscriber\+Callback@{subscriber\+Callback}}
+\index{subscriber\+Callback@{subscriber\+Callback}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{subscriber\+Callback(const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&pose\+\_\+msg)}{subscriberCallback(const nav_msgs::Odometry::ConstPtr &pose_msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void subscriber\+Callback (
+\begin{DoxyParamCaption}
+\item[{const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&}]{pose\+\_\+msg}
+\end{DoxyParamCaption}
+)}\hypertarget{random__movement_8cpp_aef70658f8ec02213922917e67d9e1c76}{}\label{random__movement_8cpp_aef70658f8ec02213922917e67d9e1c76}
+
+
+This function, is called every time something is read from the topic /odom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pose\+\_\+msf} & \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file random\+\_\+movement.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!client@{client}}
+\index{client@{client}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{client}{client}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Service\+Client client}\hypertarget{random__movement_8cpp_a17bcd065930a8a7f9f194078d9977268}{}\label{random__movement_8cpp_a17bcd065930a8a7f9f194078d9977268}
+
+
+Definition at line 22 of file random\+\_\+movement.\+cpp.
+
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!pub@{pub}}
+\index{pub@{pub}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{pub}{pub}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Publisher pub}\hypertarget{random__movement_8cpp_a350594df3e8f6948c8462edfd41ce086}{}\label{random__movement_8cpp_a350594df3e8f6948c8462edfd41ce086}
+
+
+Definition at line 20 of file random\+\_\+movement.\+cpp.
+
+\index{random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}!rand\+\_\+position@{rand\+\_\+position}}
+\index{rand\+\_\+position@{rand\+\_\+position}!random\+\_\+movement.\+cpp@{random\+\_\+movement.\+cpp}}
+\subsubsection[{\texorpdfstring{rand\+\_\+position}{rand_position}}]{\setlength{\rightskip}{0pt plus 5cm}myfirstassignment\+::rdm rand\+\_\+position}\hypertarget{random__movement_8cpp_a7b452f070094b469cfdb9ed3f7e144ef}{}\label{random__movement_8cpp_a7b452f070094b469cfdb9ed3f7e144ef}
+
+
+Definition at line 24 of file random\+\_\+movement.\+cpp.
+

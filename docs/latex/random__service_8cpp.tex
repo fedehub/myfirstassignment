@@ -1,0 +1,62 @@
+\hypertarget{random__service_8cpp}{}\section{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+service.cpp File Reference}
+\label{random__service_8cpp}\index{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+service.\+cpp@{/root/\+Desktop/assignment\+R\+T/github/myfirstassignment/src/random\+\_\+service.\+cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}myfirstassignment/rdm.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for random\+\_\+service.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{random__service_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{random__service_8cpp_ae81a0ba2bef3c9a93c7b8df4d00b7e16}{Rand} (myfirstassignment\+::rdm\+::\+Request \&req, myfirstassignment\+::rdm\+::\+Response \&res)
+\begin{DoxyCompactList}\small\item\em This function is called under request. It ask for a request and returns the target\textquotesingle{}s coordinates. \end{DoxyCompactList}\item 
+int \hyperlink{random__service_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{random\+\_\+service.\+cpp@{random\+\_\+service.\+cpp}!main@{main}}
+\index{main@{main}!random\+\_\+service.\+cpp@{random\+\_\+service.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{random__service_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{random__service_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 33 of file random\+\_\+service.\+cpp.
+
+\index{random\+\_\+service.\+cpp@{random\+\_\+service.\+cpp}!Rand@{Rand}}
+\index{Rand@{Rand}!random\+\_\+service.\+cpp@{random\+\_\+service.\+cpp}}
+\subsubsection[{\texorpdfstring{Rand(myfirstassignment\+::rdm\+::\+Request \&req, myfirstassignment\+::rdm\+::\+Response \&res)}{Rand(myfirstassignment::rdm::Request &req, myfirstassignment::rdm::Response &res)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Rand (
+\begin{DoxyParamCaption}
+\item[{myfirstassignment\+::rdm\+::\+Request \&}]{req, }
+\item[{myfirstassignment\+::rdm\+::\+Response \&}]{res}
+\end{DoxyParamCaption}
+)}\hypertarget{random__service_8cpp_ae81a0ba2bef3c9a93c7b8df4d00b7e16}{}\label{random__service_8cpp_ae81a0ba2bef3c9a93c7b8df4d00b7e16}
+
+
+This function is called under request. It ask for a request and returns the target\textquotesingle{}s coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & the request received from the client (none) \\
+\hline
+{\em res} & the response returned to the clien (the random coordinates within a specific interval) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & random number (True or False) \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 23 of file random\+\_\+service.\+cpp.
+

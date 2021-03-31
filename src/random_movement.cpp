@@ -34,11 +34,12 @@ int distance_btw_points(int a, int b){
 }
 
 /**
- *@brief This function, is called very time something is read from the topic /odom 
+ *@brief This function, is called every time something is read from the topic /odom 
  *@param pose_msf 
  *@param 
  *@retval 
- */
+*/
+
 void subscriberCallback(const nav_msgs::Odometry::ConstPtr& pose_msg)
 {
    geometry_msgs::Twist msg_sent;
