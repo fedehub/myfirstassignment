@@ -29,6 +29,18 @@ The second node [random_service.cpp](https://github.com/fedehub/myfirstassignmen
 
 It is visible in the [srv](https://github.com/fedehub/myfirstassignment/blob/main/srv/) folder and it manages the request/reply of the custom service
 
+## Rqt-graph (ROS tool)
+
+By running the following command:
+
+```
+rosrun rqt_graph rqt_graph
+
+```
+it is possible to show a dynamic graph, depicting what is going on within the System.
+
+![rqt_graph](https://github.com/fedehub/myfirstassignment/blob/main/rqt_graph/rosgraph.png "Rqt_graph - first assignment")
+
 ## Documentation ##
 
 The documentation of this project, obtained by means of **DoxyGen** is visible, within the [docs](https://github.com/fedehub/myfirstassignment/blob/main/docs) folder
@@ -66,6 +78,8 @@ rosrun myfirstassignment rand_mov
 ```
 
 So far, the robot should appear in the simulation environment and once it reaches a target, it should move toward another direction, looking for the next one.
+
+
 
 # Release History
 
