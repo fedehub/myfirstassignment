@@ -1,6 +1,6 @@
 # Research Track I - first assignment
 
-In this first assignment we were asked to control an holonomic robot within a 2d space with a simple 2d simulator, Stage. 
+In this first assignment we were asked to control an holonomic robot within a 2d space with a simple 2d simulator, Stage.
 The simulator can be launched by executing the command:
 
 ```
@@ -8,7 +8,7 @@ rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 ```
 
 
-# How the project is structured 
+# How the project is structured
 
 
 Once I have created a new ROS package, **two ROS nodes** have been developed. For writing the code I have chosen to adopt C++ programming language.
@@ -33,6 +33,14 @@ It is visible in the [srv](https://github.com/fedehub/myfirstassignment/blob/mai
 
 The documentation of this project, obtained by means of **DoxyGen** is visible, within the [docs](https://github.com/fedehub/myfirstassignment/blob/main/docs) folder
 
+## Meta
+
+Federico Civetta– s4194543 – fedeunivers@gmail.com
+
+Distributed under none licence
+
+https://github.com/fedehub
+
 # How to launch
 
 1. Firstly, create a folder named _"myfirstassignment"_
@@ -40,21 +48,37 @@ The documentation of this project, obtained by means of **DoxyGen** is visible, 
 ```
 git clone https://github.com/fedehub/myfirstassignment/
 ```
-3. Then, to launch the simulation enviroment, please run the comamnd
+3. Then, to launch the simulation environment, please run the command
 ```
 rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 ```
 4. To launch the [firs node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_movement.cpp), digit:
 
 ```
-rosrun myfirstassignment rand_ser 
+rosrun myfirstassignment rand_ser
 
 ```
 5. To launch the [second node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), digit:
 
 ```
-rosrun myfirstassignment rand_mov 
+rosrun myfirstassignment rand_mov
 
 ```
 
-So far, the robot should appear in the simulation enviroment and once it reaches a target, it should move toward another direction, looking for the next one.
+So far, the robot should appear in the simulation environment and once it reaches a target, it should move toward another direction, looking for the next one.
+
+# Release History
+
+* 0.1.0
+ * The first proper release
+
+* 0.0.1
+ * Work in progress
+
+## Contributing
+
+1. Fork it (https://github.com/fedehub/myfirstassignment/fork)
+2. Create your feature branch (git checkout -b feature/fooBar)
+3. Commit your changes (git commit -am 'Add some fooBar')
+4. Push to the branch (git push origin feature/fooBar)
+5. Create a new Pull Request

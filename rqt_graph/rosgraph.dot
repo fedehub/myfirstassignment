@@ -1,0 +1,40 @@
+digraph graphname {
+	graph [bb="0,0,393.27,90",
+		compound=True,
+		rank=same,
+		rankdir=LR,
+		ranksep=0.2
+	];
+	node [label="\N"];
+	n___random	 [URL=__random,
+		height=0.5,
+		label="/random",
+		pos="102.69,18",
+		shape=ellipse,
+		tooltip="/random",
+		width=1.3721];
+	n___random_movement	 [URL=__random_movement,
+		height=0.5,
+		label="/random_movement",
+		pos="102.69,72",
+		shape=ellipse,
+		tooltip="/random_movement",
+		width=2.8525];
+	n___stageros	 [URL=__stageros,
+		height=0.5,
+		label="/stageros",
+		pos="339.33,72",
+		shape=ellipse,
+		tooltip="/stageros",
+		width=1.4985];
+	n___random_movement -> n___stageros	 [URL=topic_3A__cmd_vel,
+		label="/cmd_vel",
+		lp="245.38,79.5",
+		penwidth=1,
+		pos="e,285.23,72 205.58,72 229.18,72 253.62,72 275,72"];
+	n___stageros -> n___random_movement	 [URL=topic_3A__odom,
+		label="/odom",
+		lp="245.38,60.5",
+		penwidth=1,
+		pos="e,164.54,57.61 302.33,58.813 294.23,56.4 285.6,54.251 277.38,53 243.69,47.87 206.12,50.902 174.56,55.919"];
+}
