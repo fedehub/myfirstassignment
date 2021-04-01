@@ -60,17 +60,23 @@ https://github.com/fedehub
 ```
 git clone https://github.com/fedehub/myfirstassignment/
 ```
-3. Then, to launch the simulation environment, please run the command
+3. Secondly, start the master in background, by running: 
+
+```
+roscore &
+
+```
+3. Then, to launch the simulation environment, please open a new shell tab and run the command
 ```
 rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 ```
-4. To launch the [firs node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_movement.cpp), digit:
+4. To launch the [firs node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_movement.cpp), open another shell tab and digit:
 
 ```
 rosrun myfirstassignment rand_ser
 
 ```
-5. To launch the [second node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), digit:
+5. To launch the [second node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_service.cpp), open another shell tab and  digit:
 
 ```
 rosrun myfirstassignment rand_mov
