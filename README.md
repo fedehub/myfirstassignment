@@ -68,7 +68,7 @@ roscore &
 ```
 3. Then, to launch the simulation environment, please open a new shell tab and run the command
 ```
-rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
+rosrun stage_ros stageros $(rospack find myfirstassignment)/world/exercise.world
 ```
 4. To launch the [firs node](https://github.com/fedehub/myfirstassignment/blob/main/src/random_movement.cpp), open another shell tab and digit:
 
