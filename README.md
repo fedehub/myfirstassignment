@@ -4,7 +4,7 @@ In this first assignment we were asked to control an holonomic robot within a 2d
 The simulator can be launched by executing the command:
 
 ```
-rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
+rosrun stage_ros stageros $(rospack find myfirstassignment)/world/exercise.world
 ```
 
 
