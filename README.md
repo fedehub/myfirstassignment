@@ -41,7 +41,14 @@ it is possible to show a dynamic graph, depicting what is going on within the Sy
 
 ![rqt_graph](https://github.com/fedehub/myfirstassignment/blob/main/rqt_graph/rosgraph.png "Rqt_graph - first assignment")
 
-## Documentation ##
+## Demo
+
+For the sake of completness, here below a brief gif demonstrating the pkg usage 
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/61761835/183943774-ceb24e72-154f-468b-9545-92fea4f32c54.gif)
+
+
+## Documentation
 
 The documentation of this project, obtained by means of **DoxyGen** is visible, within the [docs](https://github.com/fedehub/myfirstassignment/blob/main/docs) folder
 
